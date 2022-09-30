@@ -166,7 +166,7 @@
    };
    
    this.drawCell = function(x, y) {
-     context.fillStyle = 'rgb(170, 170, 170)';
+     context.fillStyle = 'rgb(28, 28, 28)';
      context.beginPath();
      context.arc((x * snake.stage.conf.cw + 6), (y * snake.stage.conf.cw + 6), 4, 0, 2*Math.PI, false);    
      context.fill();
@@ -193,5 +193,5 @@
  
  
  window.onload = function() {
-   var snake = new Game.Snake('stage', {fps: 100, size: 4});
+   var snake = new Game.Snake('stage', {fps: 60, size: 4});
  };
