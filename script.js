@@ -1,23 +1,23 @@
 
- var Game      = Game      || {};
- var Keyboard  = Keyboard  || {}; 
- var Component = Component || {};
+ var Jogo      = Jogo      || {};
+ var Teclado  = Teclado  || {}; 
+ var Componente = Componente || {};
  
 
- Keyboard.Keymap = {
-   37: 'left',
-   38: 'up',
-   39: 'right',
-   40: 'down'
+ Teclado.Mapeamento = {
+   37: 'esquerda',
+   38: 'cima',
+   39: 'direita',
+   40: 'baixo'
  };
  
 
- Keyboard.ControllerEvents = function() {
+ Teclado.ControllerEvents = function() {
    
 
    var self      = this;
-   this.pressKey = null;
-   this.keymap   = Keyboard.Keymap;
+   this.PressionaTecla = null;
+   this.Mapeamento   = Teclado.Mapeamento;
    
 
    document.onkeydown = function(event) {
